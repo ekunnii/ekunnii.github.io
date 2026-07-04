@@ -1,0 +1,18 @@
+[
+    {
+        "grouping": "AI & Machine Learning",
+        "skills": ["LangGraph", "vLLM", "AWS Bedrock", "LLMOps", "MLOps", "Time Series Analysis", "Multi-Agent Systems", "NLP"]
+    },
+    {
+        "grouping": "Languages & Frameworks",
+        "skills": ["Python", "C/C++", "Java", "Linux Shell", "MySQL"]
+    },
+    {
+        "grouping": "Cloud & Infrastructure",
+        "skills": ["Kubernetes", "Docker", "Kubeflow", "CI/CD", "NFV", "SDN"]
+    },
+    {
+        "grouping": "Leadership & Collaboration",
+        "skills": ["Team Leadership", "Project Coordination", "Coaching & Mentoring", "Cross-functional Collaboration"]
+    }
+]

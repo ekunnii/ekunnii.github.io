@@ -1,0 +1,91 @@
+baseURL = "https://ekunnii.github.io/"
+defaultContentLanguage = "en"
+title = "Kun Ni"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Kun Ni"
+description = "AI Architect - Personal Blog & CV"
+author = "Kun Ni"
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+
+  [params.homeInfoParams]
+  Title = "Hi, I'm Kun Ni 👋"
+  Content = "AI Architect | Building intelligent systems"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ekunnii"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/kun-ni/"
+
+[params.cover]
+linkFullImages = true
+
+[params.editPost]
+disabled = true
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "cv"
+name = "CV"
+url = "/cv/"
+weight = 2
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 3
+
+[[menu.main]]
+identifier = "llms"
+name = "llms.txt"
+url = "/llms.txt"
+weight = 4
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 5
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"

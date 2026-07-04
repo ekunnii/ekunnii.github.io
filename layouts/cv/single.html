@@ -1,0 +1,84 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ if .Params.subtitle }}<p class="post-description">{{ .Params.subtitle }}</p>{{ end }}
+  </header>
+
+  <div class="post-content">
+    <!-- Summary -->
+    {{ if .Params.summary }}
+    <section class="cv-section">
+      <h2>Summary</h2>
+      <p>{{ .Params.summary }}</p>
+    </section>
+    {{ end }}
+
+    <!-- Skills -->
+    {{ with hugo.Data.skills }}
+    <section class="cv-section">
+      <h2>Skills</h2>
+      {{ range . }}
+      <div class="cv-skills-group">
+        <h3>{{ .grouping }}</h3>
+        <div class="cv-skills-list">
+          {{ range .skills }}
+          <span class="cv-skill-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    <!-- Experience -->
+    {{ with hugo.Data.experience }}
+    <section class="cv-section">
+      <h2>Professional Experience</h2>
+      {{ range . }}
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <h3>{{ .role }}</h3>
+          <span class="cv-entry-date">{{ .range }}</span>
+        </div>
+        <p class="cv-entry-company">{{ .company }}</p>
+        <div class="cv-entry-summary">{{ .summary | markdownify }}</div>
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    <!-- Education -->
+    {{ with hugo.Data.education }}
+    <section class="cv-section">
+      <h2>Education</h2>
+      {{ range . }}
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <h3>{{ .degree }} in {{ .major }}</h3>
+          <span class="cv-entry-date">{{ .range }}</span>
+        </div>
+        <p class="cv-entry-company">{{ .school }}</p>
+        {{ if .notes }}<p class="cv-entry-notes">{{ .notes }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    <!-- Publications -->
+    {{ if .Params.publications }}
+    <section class="cv-section">
+      <h2>Publications</h2>
+      {{ range .Params.publications }}
+      <div class="cv-entry">
+        <h3>{{ .title }}</h3>
+        <p>{{ .venue }}</p>
+        {{ if .link }}<p><a href="{{ .link }}" target="_blank">{{ .link }}</a></p>{{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+
+  </div>
+</article>
+{{ end }}
