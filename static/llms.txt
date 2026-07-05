@@ -1,20 +1,20 @@
 # Kun (Ryan) Ni
 
-> Senior Data Scientist and Tech Lead with over 14 years of experience in the ICT industry. Expert in multi-agent systems, LLM applications, and MLOps on distributed compute infrastructure.
+> AI Architect with over 15 years of experience in the ICT industry. Specializing in designing and deploying multi-agent AI systems that transform complex telecom operations. Expert in Strands Agents, Amazon Bedrock, Agentcore, and production ML systems.
 
 ## About
 
 - Location: Montreal, Quebec, Canada
-- Current Role: Senior Data Scientist at Ericsson Canada
+- Current Role: AI Architect at Ericsson Canada
 - Education: Masters in Machine Learning (Mila / Université De Montréal)
-- Specialization: Multi-agent systems, LangGraph, vLLM, LLMOps, MLOps
+- Specialization: Multi-agent systems, Strands Agents, Agentcore, Amazon Bedrock, LangGraph, vLLM
 
 ## Links
 
 - [CV](/cv/)
 - [Blog](/blog/)
 - [GitHub](https://github.com/ekunnii)
-- [LinkedIn](https://linkedin.com/in/yourprofile)
+- [LinkedIn](https://www.linkedin.com/in/kun-ni/)
 
 ## Blog Posts
 
@@ -22,7 +22,8 @@
 
 ## Skills
 
-- AI & Machine Learning: LangGraph, vLLM, AWS Bedrock, LLMOps, MLOps, Time Series Analysis, Multi-Agent Systems, NLP
+- AI & Machine Learning: LangGraph, Strands Agents, Agentcore, vLLM, AWS Bedrock, MCP, LLMOps, MLOps, Time Series Analysis, Multi-Agent Systems, NLP
+- AI Developer Tools: Claude Code, Kiro, MCP, Agent Skills
 - Languages & Frameworks: Python, C/C++, Java, Linux Shell, MySQL
 - Cloud & Infrastructure: Kubernetes, Docker, Kubeflow, CI/CD, NFV, SDN
 - Leadership: Team Leadership, Project Coordination, Coaching & Mentoring, Cross-functional Collaboration

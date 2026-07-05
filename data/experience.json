@@ -1,9 +1,15 @@
 [
     {
+        "role": "AI Architect",
+        "company": "Ericsson Canada",
+        "summary": "Architecting and leading AI-powered solutions for telecom network operations.\n- Designed multi-agent system using Strands Agents, Amazon Bedrock, and Agentcore that automates complex analysis workflows, achieving ~98% time reduction per task.\n- Built BERT-based classifier (PyTorch) that augments existing rule engines, self-improving through retraining on production data without code releases.",
+        "range": "October 2024 - Present"
+    },
+    {
         "role": "Senior Data Scientist",
         "company": "Ericsson Canada",
         "summary": "Leading AI/ML architecture and multi-agent system development for telecom.\n- Led end-to-end development of multi-agent application for content generation using LangGraph, Langfuse, and vLLM\n- Architected CI/CD log analyzer using LangGraph, Langfuse, and AWS Bedrock, automating detection of complex pipeline failures\n- Designed and built GenAI application for project office, enhancing operational efficiency\n- Managed and optimized large-scale Kubeflow GPU clusters for LLM development, deployment and inference\n- Led cross-functional collaboration to deploy production-grade Time Series Analysis models with complete MLOps pipeline\n- Mentored and led multiple intern projects, guiding novel AI solutions from concept to completion",
-        "range": "January 2022 - Present"
+        "range": "January 2022 - October 2024"
     },
     {
         "role": "Senior Software Developer",

@@ -1,7 +1,11 @@
 [
     {
         "grouping": "AI & Machine Learning",
-        "skills": ["LangGraph", "vLLM", "AWS Bedrock", "LLMOps", "MLOps", "Time Series Analysis", "Multi-Agent Systems", "NLP"]
+        "skills": ["LangGraph", "Strands Agents", "Agentcore", "vLLM", "AWS Bedrock", "MCP", "LLMOps", "MLOps", "Time Series Analysis", "Multi-Agent Systems", "NLP"]
+    },
+    {
+        "grouping": "AI Developer Tools",
+        "skills": ["Claude Code", "Kiro", "MCP", "Agent Skills"]
     },
     {
         "grouping": "Languages & Frameworks",
