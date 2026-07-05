@@ -54,4 +54,4 @@ Agents work in parallel and their outputs are merged or voted upon.
 
 In future posts, I'll dive deeper into specific patterns and share code examples from real-world implementations.
 
-Stay tuned! 🚀
+Stay tuned!

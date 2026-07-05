@@ -1,0 +1,119 @@
+/* Print styles for CV PDF generation */
+@media print {
+    /* Hide navigation, footer, theme toggle, scroll-to-top */
+    header.header,
+    footer.footer,
+    #theme-toggle,
+    .top-link,
+    .post-nav-links,
+    .breadcrumbs,
+    .toc {
+        display: none !important;
+    }
+
+    /* Remove background colors, use white */
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+
+    /* Reset content width for print */
+    .main {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .post-single {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .post-content {
+        max-width: 100% !important;
+    }
+
+    /* Page title styling */
+    .post-title {
+        font-size: 22pt !important;
+        margin-bottom: 0.2rem !important;
+    }
+
+    .post-description {
+        font-size: 12pt !important;
+        color: #333 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    /* CV sections */
+    .cv-section {
+        page-break-inside: avoid;
+        margin-bottom: 1.2rem !important;
+        padding-bottom: 0.8rem !important;
+        border-bottom: 1px solid #ddd !important;
+    }
+
+    .cv-section h2 {
+        font-size: 14pt !important;
+        color: black !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    /* Skills */
+    .cv-skills-group h3 {
+        font-size: 10pt !important;
+        color: #333 !important;
+    }
+
+    .cv-skill-tag {
+        background: #f0f0f0 !important;
+        border: 1px solid #ccc !important;
+        color: black !important;
+        font-size: 9pt !important;
+        padding: 0.1rem 0.4rem !important;
+    }
+
+    /* Experience entries */
+    .cv-entry {
+        page-break-inside: avoid;
+        margin-bottom: 1rem !important;
+    }
+
+    .cv-entry-header h3 {
+        font-size: 11pt !important;
+        color: black !important;
+    }
+
+    .cv-entry-date {
+        color: #555 !important;
+        font-size: 9pt !important;
+    }
+
+    .cv-entry-company {
+        color: #444 !important;
+        font-size: 10pt !important;
+    }
+
+    .cv-entry-summary {
+        font-size: 10pt !important;
+    }
+
+    /* Links - show URL in print */
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+    /* Page margins */
+    @page {
+        margin: 1.5cm;
+        size: A4;
+    }
+
+    /* Avoid page breaks in bad places */
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}

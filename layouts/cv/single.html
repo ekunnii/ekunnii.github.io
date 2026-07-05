@@ -3,6 +3,7 @@
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
     {{ if .Params.subtitle }}<p class="post-description">{{ .Params.subtitle }}</p>{{ end }}
+    <button id="copy-cv-md" class="button" title="Copy CV as Markdown for LLM">Copy as Markdown</button>
   </header>
 
   <div class="post-content">
@@ -81,4 +82,29 @@
 
   </div>
 </article>
+
+<script>
+document.getElementById('copy-cv-md').addEventListener('click', function() {
+  const btn = this;
+  btn.textContent = 'Copying...';
+
+  fetch('/cv.md')
+    .then(response => {
+      if (!response.ok) throw new Error('Not found');
+      return response.text();
+    })
+    .then(markdown => {
+      return navigator.clipboard.writeText(markdown);
+    })
+    .then(() => {
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = 'Copy as Markdown'; }, 2000);
+    })
+    .catch(err => {
+      console.error('Failed to copy:', err);
+      btn.textContent = 'Error';
+      setTimeout(() => { btn.textContent = 'Copy as Markdown'; }, 2000);
+    });
+});
+</script>
 {{ end }}

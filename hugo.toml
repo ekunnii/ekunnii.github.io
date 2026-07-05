@@ -33,7 +33,7 @@ hideSummary = false
 showtoc = true
 
   [params.homeInfoParams]
-  Title = "Hi, I'm Kun Ni 👋"
+  Title = "Hi, I'm Kun Ni"
   Content = "AI Architect | Building intelligent systems"
 
   [[params.socialIcons]]

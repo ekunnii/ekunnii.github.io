@@ -94,3 +94,10 @@
     border-radius: 8px;
     border: none;
 }
+
+/* Hide copy button in print */
+@media print {
+    .button {
+        display: none !important;
+    }
+}

@@ -47,6 +47,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Montreal
         run: |
+          python3 scripts/generate-cv-md.py
           hugo \
             --gc \
             --minify \
